@@ -28,6 +28,7 @@
   background-color: #eac7a9;
   border-bottom-left-radius: 30%;
   border-bottom-right-radius: 30%;
+
 }
 .ojos {
   position: relative;
@@ -36,6 +37,7 @@
   left: 10px;
   right: 8px;
   margin: 0 auto;
+  animation: mover-ojo 5s linear 0s 2 alternate;
 }
 .ojo {
   position: absolute;
@@ -43,20 +45,28 @@
   height: 75px;
   background-color: black;
   border-radius: 50%;
-
 }
 @keyframes mover-ojo {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
+  0%   {left:0px; top:0px;}
+  25%  {left:20px; top:0px;}
+  50%  {left:20px; top:20px;}
+  75%  { left:0px; top:20px;}
+  100% { left:0px; top:0px;}
 }
+@keyframes cambiar-color{
+    0% {background-color: #ff0;}
+   25% {background-color: #f80;}
+   50% {background-color: #000;}
+   75% {background-color: #f80;}
+  100% {background-color: #ff0;}
+}
+
 
 .ojo-izquierdo {
   position: absolute;
   left: 1.25em;
   top: 0;
+
   /*animation: mover-ojo 5s linear 2s 2 alternate;*/
 }
 .ojo-derecho {
@@ -173,6 +183,9 @@
     right: 0cm;
     margin: 0 auto;
     background-color: #1c9e99;
+    animation-name: cambiar-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
 .cuello{
     position: absolute;
@@ -221,6 +234,9 @@
     border-radius: 5px;
     border-top-right-radius: 50px;
     right: -17px;
+    animation-name: cambiar-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   .hombro-izquierdo{
     position: absolute;
@@ -231,6 +247,9 @@
     border-radius: 5px;
     border-top-left-radius: 50px;
     left: -20px;
+    animation-name: cambiar-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
 
   .brazos{
@@ -249,6 +268,9 @@
     background-color: #1c9e99;
     border-radius: 5px;
     right: 3px;
+    animation-name: cambiar-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   .brazo-izquierdo{
     position: absolute;
@@ -257,6 +279,9 @@
     background-color: #1c9e99;
     border-radius: 5px;
     left: -20px;
+    animation-name: cambiar-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   .manos{
     position: relative;
@@ -318,6 +343,9 @@
     background-color: #1c9e99;
     border-radius: 5px;
     left: 10px;
+    animation-name: cambiar-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   .pierna-der{
     position: absolute;
@@ -327,6 +355,9 @@
     background-color: #1c9e99;
     border-radius: 5px;
     right: 30px;
+    animation-name: cambiar-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   .bambas{
     position: relative;
