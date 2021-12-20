@@ -300,14 +300,7 @@
     left: -5px;
     top: 3px;
   }
-  .dedo1{
-    position: absolute;
-    width: 5px;
-    height: 3px;
-    background-color: black;
-    left: -5px;
-    top: 3px;
-  }
+
   .mano-derecha{
     position: absolute;
     width: 50px;
